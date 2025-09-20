@@ -12,6 +12,7 @@ import ProductModal from "@/components/ProductModal";
 import NotificationsPanel from "@/components/NotificationsPanel";
 import { Product } from "@/types/types";
 import toast from "react-hot-toast";
+import ExportButton from "@/components/ExportButton";
 
 export default function Page() {
   const [products, setProducts] = useState<Product[]>([]);
@@ -44,6 +45,7 @@ export default function Page() {
           >
             Add product
           </button>
+          <ExportButton />
         </div>
         <ProductsTable
           data={products}
